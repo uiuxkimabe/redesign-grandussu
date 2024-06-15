@@ -1,0 +1,47 @@
+/* Global Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.3s ease-in-out;
+  font-family: var(--hind);
+}
+
+:root {
+  /* font-family */
+  --poppins: "Poppins", sans-serif;
+  --hind: "Hind", sans-serif;
+  /* color */
+  --basic: #fff;
+  --dark: #03120e;
+  --main: #ef233c;
+  --secondary: #d3d3d3;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--poppins);
+}
+
+.container {
+  margin: auto;
+  max-width: 85%;
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
