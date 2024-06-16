@@ -204,6 +204,7 @@ nav .hamBtn {
 #highlight .row {
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   gap: 1.5em;
+  margin-top: 1em;
 }
 
 #highlight .card {
