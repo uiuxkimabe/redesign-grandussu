@@ -258,7 +258,7 @@ nav .hamBtn {
   background-attachment: fixed;
   color: var(--basic);
   padding: 2em 0;
-  margin: 2em 0;
+  margin-top: 2em;
 }
 
 #similar h3 {
@@ -291,3 +291,30 @@ nav .hamBtn {
 #similar ul li img {
   max-width: 50px;
 }
+
+/* End Similar */
+
+/* Footer */
+
+footer {
+  padding: 2em 0;
+}
+
+footer a {
+  color: var(--dark);
+}
+
+footer h3 {
+  margin: 10px 0;
+}
+
+footer .row {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em
+}
+
+footer ul li {
+  padding: 10px 0;
+}
+
+/* End Footer */
