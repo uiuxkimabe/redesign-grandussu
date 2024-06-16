@@ -202,3 +202,61 @@ nav .hamBtn {
   width: 100%;
   margin-top: 1em;
 }
+
+/* End Maps */
+
+/* Highlight */
+
+#highlight {
+  padding: 2em 0;
+}
+
+#highlight a {
+  color: var(--dark);
+}
+
+#highlight .row {
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 1.5em;
+}
+
+#highlight .card {
+  margin: 1em 0;
+}
+
+#highlight .card .swiper {
+  height: 300px;
+  overflow-x: scroll;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+  justify-content: flex-start;
+} 
+
+.card .swiper .swiper-img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.card .swiper .swiper-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-content {
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.card .price {
+  text-align: right;
+}
+
+.card .price .card-content {
+  justify-content: flex-end;
+}
+
+/* End Highlight */
