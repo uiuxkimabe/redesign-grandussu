@@ -16,7 +16,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>✨ Scratch Project ✨</title>
+    <title>Grand Ussu Hotel & Convention</title>
+    <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon">
+    <!-- AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Font Share -->
     <link
       href="https://api.fontshare.com/v2/css?f[]=hind@400&f[]=poppins@600&display=swap"
@@ -75,14 +78,14 @@
      <section id="hero">
       <div class="container">
         <div class="row  d-grid">
-          <div class="col caption d-flex">
+          <div data-aos="fade-right" class="col caption d-flex">
             <figcaption>
               <h2>Grand Ussu is</h2>
               <h2>Your Sanctuary of Serenity.</h2>
               <button class="check">Check Available</button>
             </figcaption>
           </div>
-          <div class="col video-preview">
+          <div data-aos="fade-left" class="col video-preview">
             <video autoplay muted loop>
               <source src="./src/assets/video/Grand Ussu Hotel & Convention.mp4" type="video/mp4">
             </video>
@@ -95,20 +98,15 @@
     <!-- About -->
      <section id="about">
       <div class="container">
-        <div class="overview d-flex">
-          <a href="#">Overview</a>
-          <a href="#">Highlight</a>
-          <a href="#">Policy</a>
-        </div>
         <div class="row d-grid">
           <div class="col about-caption">
-            <figcaption class="about-content">
+            <figcaption data-aos="fade-right" class="about-content">
               <h3>What is Grand Ussu ?</h3>
               <p>Indulge in a luxurious retreat at Grand Ussu Hotel & Convention. Boasting 153 well-appointed rooms, a refreshing
                 swimming pool, scenic landscape, restaurant serving delicious meals, free bike rentals, and plenty of Instagram-worthy
                 spots, your stay will be nothing short of extraordinary.</p>
-            </figcaption class="about-content">
-            <figcaption>
+            </figcaption>
+            <figcaption data-aos="fade-left" class="about-content">
               <h3>How to Access Grand Ussu</h3>
               <ul>
                 <li class="d-flex">
@@ -142,11 +140,11 @@
             </figcaption>
           </div>
           <div class="col about-feature">
-            <figcaption class="about-content">
+            <figcaption data-aos="fade-right" class="about-content">
               <h3>General Facilities</h3>
               <p>At our hotel, we offer a range of facilities designed to enhance your stay</p>
             </figcaption>
-            <div class="list-features d-flex">
+            <div data-aos="fade-right" class="list-features d-flex">
               <figcaption  class="col">
                 <ul>
                   <li class="d-flex">
@@ -232,11 +230,11 @@
                 </ul>
               </figcaption>
             </div>
-            <figcaption class="about-content">
+            <figcaption data-aos="fade-right" class="about-content">
               <h3>Nearby Place</h3>
               <p>nearby location to best fit your place.</p>
             </figcaption>
-            <div class="place">
+            <div data-aos="fade-right" class="place">
               <ul class="d-grid">
                 <li>
                   <span class="material-symbols-outlined">
@@ -266,7 +264,7 @@
             </div>
           </div>
         </div>
-        <div class="row maps">
+        <div data-aos="fade-right" class="row maps">
           <figcaption>
             <h3>Here You'll Be</h3>
           </figcaption>
@@ -275,6 +273,44 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <div data-aos="fade-left" class="row rule d-grid">
+          <figcaption>
+            <h3>Things to know</h3>
+            <p>Please read the caution before check in</p>
+          </figcaption>
+          <div class="col">
+            <figcaption>
+              <h4>Rooms</h4>
+              <ul>
+                <li>
+                  <p>Check In Time : 12:00 PM - 08:00 PM</p>
+                </li>
+                <li>
+                  <p>Check Out Before : 12:00 PM</p>
+                </li>
+                <li>
+                  <p>Pets Not Allowed</p>
+                </li>
+              </ul>
+            </figcaption>
+          </div>
+          <div class="col">
+            <figcaption>
+              <h4>Restaurant</h4>
+              <ul>
+                <li>
+                  <p>Open : 08:00 PM - 10:00 PM</p>
+                </li>
+                <li>
+                  <p>Room Service : 08:00 PM - 10 AM</p>
+                </li>
+                <li>
+                  <p>Coffee Shop : 08:00 PM - 10 AM</p>
+                </li>
+              </ul>
+            </figcaption>
+          </div>
+        </div>
       </div>
      </section>
     <!-- End About -->
@@ -282,12 +318,12 @@
     <!-- Highlight -->
      <section id="highlight">
       <div class="container">
-        <figcaption>
+        <figcaption data-aos="fade-right">
           <h3>Highlight Our Room</h3>
           <p>The luxurious and comfy room to stay.</p>
         </figcaption>
         <div class="row d-grid">
-          <a href="#" class="card">
+          <a data-aos="fade-right" href="#" class="card">
             <figure>
               <div class="swiper d-flex">
                 <div class="swiper-img">
@@ -317,7 +353,7 @@
               </figcaption>
             </figure>
           </a>
-          <a href="#" class="card">
+          <a data-aos="fade-left" href="#" class="card">
             <figure>
               <div class="swiper d-flex">
                 <div class="swiper-img">
@@ -347,7 +383,7 @@
               </figcaption>
             </figure>
           </a>
-          <a href="#" class="card">
+          <a data-aos="fade-right" href="#" class="card">
             <figure>
               <div class="swiper d-flex">
                 <div class="swiper-img">
@@ -382,7 +418,73 @@
      </section>
     <!-- End Highlight -->
 
+    <!-- Similar -->
+     <section id="similar">
+      <div class="container">
+        <div class="row d-grid">
+          <div data-aos="fade-right" class="col">
+            <h3>Guest Event</h3>
+            <p>We strive to provide our guests with the highest standards of service and comfort, and it is always rewarding to know
+            that our efforts contribute positively to your stay. Your satisfaction is our priority, and we are grateful for the
+            trust you placed in us.</p>
+          </div>
+          <div data-aos="fade-left" class="col similar-content d-flex">
+            <ul>
+              <li class="d-flex">
+                <img src="./src/assets/partner/kemenhan.png" alt="Grand Ussu Hotel & Convention">
+                <figcaption>
+                  <h4>Kementerian Pertahanan</h4>
+                  <p>Goverment event</p>
+                </figcaption>
+              </li>
+              <li class="d-flex">
+                <img src="./src/assets/partner/bappenas.png" alt="Grand Ussu Hotel & Convention">
+                <figcaption>
+                  <h4>Bappenas</h4>
+                  <p>Goverment event</p>
+                </figcaption>
+              </li>
+              <li class="d-flex">
+                <img src="./src/assets/partner/kemenag.png" alt="Grand Ussu Hotel & Convention">
+                <figcaption>
+                  <h4>Kementerian Agama</h4>
+                  <p>Goverment event</p>
+                </figcaption>
+              </li>
+              <li class="d-flex">
+                <img src="./src/assets/partner/dishub.png" alt="Grand Ussu Hotel & Convention">
+                <figcaption>
+                  <h4>Dinas Perhubungan</h4>
+                  <p>Goverment event</p>
+                </figcaption>
+              </li>
+              <li class="d-flex">
+                <img src="./src/assets/partner/kemenhut.png" alt="Grand Ussu Hotel & Convention">
+                <figcaption>
+                  <h4>Kementerian Perhutanan</h4>
+                  <p>Goverment event</p>
+                </figcaption>
+              </li>
+              <li class="d-flex">
+                <img src="./src/assets/partner/kemenristekdikti.png" alt="Grand Ussu Hotel & Convention">
+                <figcaption>
+                  <h4>Kemenristek Dikti</h4>
+                  <p>Goverment event</p>
+                </figcaption>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- End Similar -->
 
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- 👇 javascript code file 👇 -->
     <script src="./src/js/index.js"></script>
   </body>

@@ -115,20 +115,6 @@ nav .hamBtn {
   padding: 2em 0;
 }
 
-#about .overview {
-  position: sticky;
-  top: 70px;
-  justify-content: flex-start;
-  gap: 1em;
-  background-color: var(--basic);
-  padding: 1em 0;
-}
-
-.overview a {
-  color: var(--dark);
-  font-weight: 600;
-}
-
 #about .row {
   margin: 1em 0;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -194,7 +180,7 @@ nav .hamBtn {
   font-weight: 600;
 }
 
-.maps {
+.maps, .rule {
   margin-top: 2em !important;
 }
 
@@ -225,8 +211,9 @@ nav .hamBtn {
 }
 
 #highlight .card .swiper {
-  height: 300px;
+  height: 280px;
   overflow-x: scroll;
+  overflow-y: hidden;
   border-radius: 10px;
   margin-bottom: 1em;
   scroll-snap-type: x mandatory;
@@ -260,3 +247,46 @@ nav .hamBtn {
 }
 
 /* End Highlight */
+
+/* Similar */
+
+#similar {
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0.849) 0%, rgba(11, 72, 84, 0.849) 100%), url(../assets/meeting/camar/camar1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--basic);
+  padding: 2em 0;
+  margin: 2em 0;
+}
+
+#similar h3 {
+  margin-bottom: 10px;
+}
+
+#similar .row {
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  gap: 2em;
+  align-items: center;
+}
+
+#similar .similar-content {
+  padding: 1em;
+  background-color: rgba(3, 18, 14, .4);
+}
+
+#similar ul {
+  width: 100%;
+}
+
+#similar ul li {
+  width: inherit;
+  justify-content: flex-start;
+  gap: 1em;
+  padding: 1em 0;
+  border-bottom: 1px solid var(--basic);
+}
+
+#similar ul li img {
+  max-width: 50px;
+}
