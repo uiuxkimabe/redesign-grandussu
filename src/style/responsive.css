@@ -1,16 +1,19 @@
 /* Responsive SM */
 @media (min-width: 640px) {
-   
 }
-
 
 /* Responsive MD */
 @media (min-width: 768px) {
-/* Hero */
-    #hero .row {
-        border: .5px solid var(--secondary);
-        padding: 1em;
-        box-shadow: 0 3px 6px rgba(0,0,0,.4);
-    }
+  /* Hero */
+  #hero .row {
+    border: 0.5px solid var(--secondary);
+    padding: 1em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
 
+  /* Room-Content */
+
+  .card-room .room-content {
+    padding: 0 1em;
+  }
 }
