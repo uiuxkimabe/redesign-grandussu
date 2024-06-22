@@ -33,15 +33,39 @@
 
 #rooms .card-room {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+
+.card-room h3 {
+  margin-bottom: 10px;
 }
 
 .card-room .room-img {
-  max-height: 400px;
+  height: 400px;
+}
+
+.card-room .room-img .room-slide {
+  height: 100%;
+  margin-bottom: 1em;
   background-color: pink;
+  border-radius: 10px;
+}
+
+.card-room .room-img .room-similar ul {
+  justify-content: flex-start;
+  height: 100%;
+  gap: 10px;
+}
+
+.card-room .room-img .room-similar ul li {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 .card-room .room-content {
-  padding: 1em;
+  padding: 0 1em;
   flex-direction: column;
   gap: 1em;
   align-items: flex-start;
@@ -50,10 +74,8 @@
 
 .room-content figcaption {
   width: 100%;
-}
-
-.room-content figcaption h3 {
-  margin-bottom: 10px;
+  padding: 1em 0;
+  border-bottom: 0.5px solid var(--secondary);
 }
 
 .room-content .room-fac {
@@ -64,10 +86,24 @@
 .room-content .room-fac li {
   justify-content: flex-start;
   gap: 8px;
-  padding: 10px 5px;
-  border-bottom: 0.5px solid var(--secondary);
+  padding: 10px;
+  border-left: 3px solid var(--secondary);
 }
 
-.room-content .room-similar .col {
-  flex: 1 1;
+.room-content .room-fac li:hover {
+  border-left: 3px solid var(--main);
+}
+
+.room-content .room-price {
+  text-align: right;
+}
+
+.room-content .room-price button {
+  padding: 0.8em 1.5em;
+  background-color: var(--dark);
+  color: var(--basic);
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  font-size: 1em;
 }
