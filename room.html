@@ -24,6 +24,10 @@
     />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Swipper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Font Share -->
     <link
       href="https://api.fontshare.com/v2/css?f[]=hind@400&f[]=poppins@600&display=swap"
@@ -104,17 +108,9 @@
         <div class="row">
           <div class="col card-room d-grid">
             <div class="room-img">
-              <div class="room-slide d-flex">
+              <div class="room-slide">
                 <img
                   src="./src/assets/rooms/rose/ROSE 1.JPG"
-                  alt="Grand Ussu Hotel & Convention"
-                />
-                <img
-                  src="./src/assets/rooms/rose/ROSE 2.JPG"
-                  alt="Grand Ussu Hotel & Convention"
-                />
-                <img
-                  src="./src/assets/rooms/rose/ROSE 3.JPG"
                   alt="Grand Ussu Hotel & Convention"
                 />
               </div>
@@ -128,7 +124,7 @@
               </figcaption>
             </div>
             <div class="room-content d-flex">
-              <figcaption>
+              <figcaption class="room-description">
                 <h3>Standard Room</h3>
                 <p>
                   The standard room in this hotel is a cozy retreat, designed
@@ -170,7 +166,7 @@
               </figcaption>
               <figcaption>
                 <div class="room-price">
-                  <h3 class="price">1.000.000 <span> / Night</span></h3>
+                  <h3><span class="price"></span> <span> / Night</span></h3>
                   <button class="room-book">Book Now</button>
                 </div>
               </figcaption>
@@ -181,8 +177,67 @@
     </section>
     <!-- End Rooms -->
 
+    <!-- Slider -->
+    <section id="slider">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <img src="./src/assets/rooms/rose/ROSE 2.JPG" alt="Grand Ussu Hotel & Convention" class="swiper-slide">
+              <img src="./src/assets/rooms/rose/ROSE 3.JPG" alt="Grand Ussu Hotel & Convention" class="swiper-slide">
+              <img src="./src/assets/rooms/rose/ROSE 4.JPG" alt="Grand Ussu Hotel & Convention" class="swiper-slide">
+              <img src="./src/assets/rooms/rose/ROSE 5.JPG" alt="Grand Ussu Hotel & Convention" class="swiper-slide">
+            </div>
+            <!-- Navigation Button -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <span class="material-symbols-outlined close">
+            close
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- End Slider -->
+
     <!-- Booking -->
-    <section id="booking"></section>
+     <section id="booking">
+      <div class="container">
+        <div class="row">
+          <form action="post">
+            <label for="customer-name">
+              <h4>Name</h4>
+              <input type="text">
+            </label>
+            <div class="date-setting d-grid">
+              <label for="check-in">
+                <h4>Check In</h4>
+                <input type="date" name="check-in" id="check-in">
+              </label>
+              <label for="check-out">
+                <h4>Check Out</h4>
+                <input type="date" name="check-out" id="check-out">
+              </label>
+            </div>
+            <div class="pax-setting d-grid">
+              <label for="pax">
+                <h4>Adult</h4>
+                <input type="number" name="pax" id="pax-adult">
+              </label>
+              <label for="pax">
+                <h4>Kids</h4>
+                <input type="number" name="pax" id="pax-kids">
+              </label>
+            </div>
+            <label for="body">
+              <h4>Massage</h4>
+              <input type="text" name="body" id="body">
+            </label>
+            <button type="submit" class="checked">Check Available</button>
+          </form>
+        </div>
+      </div>
+     </section>
     <!-- End Booking -->
 
     <!-- Footer -->
@@ -228,6 +283,7 @@
       </div>
     </footer>
     <!-- End Footer -->
+
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
