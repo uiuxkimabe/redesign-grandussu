@@ -14,14 +14,18 @@ const swiper = new Swiper('.swiper', {
 
 // Slider
 const sliderPhoto = document.querySelector('#slider')
-const closeSliderPhoto = document.querySelector('#slider .close')
-const roomImg = document.querySelector('.room-img').addEventListener('click', () => {
-    sliderPhoto.classList.add('show')
-})
+const closeSliderPhoto = document.querySelectorAll('#slider .close')
+const roomImg = document.querySelectorAll('.room-img')
 
-closeSliderPhoto.addEventListener('click', () => {
-    sliderPhoto.classList.remove('show')
-})
+roomImg.forEach(element => {
+  element.addEventListener('click', () => {
+    sliderPhoto.classList.add('show')
+  })
+});
+
+closeSliderPhoto.forEach(element => {
+  element.addEventListener('click',()=> {sliderPhoto.classList.remove('show')})
+});
 
 // Room Price
 const priceList = {
@@ -34,8 +38,8 @@ const priceRoom = document.querySelectorAll('.room-price .price')
 const [standard, deluxe, superior] = priceRoom
 function changePrice() {
     standard.innerHTML = priceList.standardRoom.toLocaleString('ID-id');
-    // deluxe.innerHTML = priceList.deluxeRoom.toLocaleString('ID-id');
-    // superior.innerHTML = priceList.superiorRoom.toLocaleString('ID-id');
+    deluxe.innerHTML = priceList.deluxeRoom.toLocaleString('ID-id');
+    superior.innerHTML = priceList.superiorRoom.toLocaleString('ID-id');
 }
 
 changePrice()
